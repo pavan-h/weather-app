@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+  </head>
+  <body>
+  
+      <div class="container">
+      
+       
+      <div class="search wrapper" id="search">
+        <h1>The weather Store</h1>
+        <div class="input-container">
+      <input type="text" placeholder="Enter City Name" spellcheck="false" />
+      <button class="btn"><i class="uil uil-location-point"></i></button>
+    </div>
+      <div class="error-container">
+        <p class="error-text" id="error"></p> 
+      </div>
+    </div>
+
+
+    <div class="place wrapper">
+      <div class="time-zone" id="time-zone">Asia/Koltaka</div>
+      <div class="country" id="country">in</div>
+    </div>
+
+
+      <div class="current wrapper">
+        <div class="date-container">
+          <div class="time" id="time">
+            <span id="hours">12</span>:<span id="minutes">20</span> 
+          </div>
+          <div class="date" id="date">
+            <span id="day">monday</span>,<span id="date-today">15</span>
+            <span id="month">aug</span>
+          </div>
+      
+          <div class="others" id="current-weather">
+            <div class="weather-condition-container">
+                <div class="weather-condition-wrapper">
+                  <div class="weather-condition">
+                    <div class="icon"></div>
+                    <div class="condition">temp  <span></span>&#8451;</div>
+                    <div class="feels-like">feels like <span></span> &#8451;</div>
+                  </div>
+                  <span class="description">cloudy</span>
+                </div>
+              </div>
+      
+              <div class="other-details">
+                  <div class="grid-left">
+                      <div class="spaced-content weather-deatils">
+                          <div >min_temp</div>
+                          <div id="min-temp">30 <span>&#8451;</span></div>
+                      </div>
+                      <div class="spaced-content weather-deatils">
+                          <div >pressure</div>
+                          <div id="pressure">85 <span>mb</span></div>
+                      </div>
+                      <div class="spaced-content weather-deatils">
+                          <div >visibility</div>
+                          <div id="visibility">2 <span>Km</span></div>
+                      </div>
+                  </div>
+      
+      
+      
+                 <div class="grid-right">
+                  <div class="spaced-content weather-deatils">
+                      <div >max_temp</div>
+                      <div id="max-temp">6.30 <span>&#8451;</span></div>
+                  </div>
+                  <div class="spaced-content weather-deatils">
+                      <div >humidity</div>
+                      <div id="humidity">50<span>%</span></div>
+                  </div>
+                  <div class="spaced-content weather-deatils">
+                      <div >windspeed</div>                    
+                      <div id="wind-speed">20 <span>Km/h</span></div>
+                  </div>
+      
+                 </div> 
+              </div>
+        </div>
+
+        
+        
+       </div>
+      </div>
+
+
+      
+    </div> 
+    <script src="script.js"></script>
+  </body>
+</html>
